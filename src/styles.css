@@ -50,6 +50,8 @@ button {
     border: 10px solid black;
     margin: 0px 12px 12px 12px;
     background-color: var(--background-yellow);
+
+    flex: 1;
 }
 
 /* TODO Background yellow for content? */
