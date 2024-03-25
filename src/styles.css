@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Burgers1";
+    src: url(./assets/bobs_burgers-webfont.woff) format("woff"),
+        url(./assets/bobs_burgers-webfont.woff2) format("woff2");
+    font-style: normal;
+}
+
 :root {
     --background-red: #e82939;
     --background-yellow: #f6dd42;
@@ -32,6 +39,11 @@ button {
     border: 0px;
     min-height: clamp(50px, 10vh, 300px);
     background-color: var(--background-yellow);
+
+    font-family: "Burgers1";
+    font-size: 4rem;
+
+    cursor: pointer;
 }
 
 .content {
