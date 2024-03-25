@@ -54,4 +54,14 @@ button {
     flex: 1;
 }
 
-/* TODO Chalkboard for menu */;
+h1 {
+    font-family: "Burgers1";
+
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+
+
+/* TODO Chalkboard for menu */
+;
