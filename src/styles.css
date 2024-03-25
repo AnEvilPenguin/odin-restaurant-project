@@ -1,0 +1,43 @@
+:root {
+    --background-red: #e82939;
+    --background-yellow: #f6dd42;
+}
+
+.background {
+    background-color: var(--background-red);
+    margin: 0px;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 0px 25vw;
+    margin: 0px;
+}
+
+nav {
+    padding: 0px 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+
+    background-color: black;
+}
+
+button {
+    border: 0px;
+    min-height: clamp(50px, 10vh, 300px);
+    background-color: var(--background-yellow);
+}
+
+.content {
+    border: 10px solid black;
+    margin: 0px 12px 12px 12px;
+}
+
+/* TODO Background yellow for content? */
+/* TODO Chalkboard for menu */;
