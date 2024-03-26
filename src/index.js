@@ -10,7 +10,7 @@ import "./styles.css";
     const homeBtn = document.querySelector("#Home");
     const menuBtn = document.querySelector("#Menu");
     const aboutBtn = document.querySelector("#About");
-    
+
     const clearContent = () => content.textContent = "";
 
     const mainMenu = () => {
@@ -43,7 +43,7 @@ import "./styles.css";
 
         const item = document.createElement("li");
         item.classList.add("menuItem");
-        
+
         const name = document.createElement("p");
         name.textContent = "Regular";
         item.appendChild(name);
@@ -66,6 +66,36 @@ import "./styles.css";
         // Soft Drink - $2.00
         // Beer - $4.00
 
+        const chalkboard = document.createElement("div");
+        chalkboard.classList.add("chalkboard");
+
+        const title = document.createElement("h1");
+        title.textContent = "BURGER"
+        title.classList.add("specialTitle");
+        chalkboard.appendChild(title);
+
+        const subTitle = document.createElement("h2");
+        subTitle.textContent = "OF THE DAY";
+        subTitle.classList.add("specialSubTitle");
+        chalkboard.appendChild(subTitle);
+
+        const special = document.createElement("p");
+        special.textContent = "SHE'S A SUPER LEEK BURGER";
+        special.classList.add("special");
+        chalkboard.appendChild(special);
+
+        const aside = document.createElement("p");
+        aside.textContent = "(Comes with braised leeks)";
+        aside.classList.add("specialAside");
+        chalkboard.appendChild(aside);
+
+        const specialCost = document.createElement("p");
+        specialCost.textContent = "$5.95";
+        specialCost.classList.add("specialCost");
+        chalkboard.appendChild(specialCost);
+
+        content.appendChild(chalkboard);
+
         // TODO burger of the day
         // Chalk board
         // Random choice from list?
@@ -85,5 +115,5 @@ import "./styles.css";
     // TODO content files
     // TODO common files
     // TODO factory function to manage buttons e.g. map object, last pressed button, etc.
-        // when push button remove listener and re-apply listener to previous button
+    // when push button remove listener and re-apply listener to previous button
 })();
