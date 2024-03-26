@@ -34,10 +34,48 @@ import "./styles.css";
         // TODO quotes from flyer: https://bobs-burgers.fandom.com/wiki/Bob%27s_Burgers_(restaurant)?file=Bobs-Burgers-Wiki_Flyer_01.jpg
     }
 
+    const menu = () => {
+
+        const regularMenu = document.createElement("div");
+        regularMenu.classList.add("regularMenu");
+
+        const list = document.createElement("ul");
+
+        const item = document.createElement("li");
+        item.classList.add("menuItem");
+        
+        const name = document.createElement("p");
+        name.textContent = "Regular";
+        item.appendChild(name);
+
+        const cost = document.createElement("p");
+        cost.textContent = "$5.00";
+        item.appendChild(cost);
+
+        list.appendChild(item);
+        regularMenu.appendChild(list);
+
+        content.appendChild(regularMenu);
+
+        // TODO regular menu
+        // Regular - $5.00
+        // Special - $5.95
+        // Cheese - Add .50
+        // Fries - $2.00
+        // Side Salad - $2.50
+        // Soft Drink - $2.00
+        // Beer - $4.00
+
+        // TODO burger of the day
+        // Chalk board
+        // Random choice from list?
+    }
+
     homeBtn.addEventListener("click", clearContent);
     homeBtn.addEventListener("click", mainMenu);
 
     menuBtn.addEventListener("click", clearContent);
+    menuBtn.addEventListener("click", menu);
 
     aboutBtn.addEventListener("click", clearContent);
 
@@ -46,4 +84,6 @@ import "./styles.css";
     // TODO Clear any existing content
     // TODO content files
     // TODO common files
+    // TODO factory function to manage buttons e.g. map object, last pressed button, etc.
+        // when push button remove listener and re-apply listener to previous button
 })();
