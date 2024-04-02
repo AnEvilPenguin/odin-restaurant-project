@@ -869,8 +869,8 @@
         "subtext": "Comes with wasabi aioli"
     },
     {
-       "name": "shishito corleone burger",
-       "subtext": "Comes with Shishito Peppers"
+        "name": "shishito corleone burger",
+        "subtext": "Comes with Shishito Peppers"
     },
     {
         "name": "the gouda wife burger",
@@ -1061,8 +1061,407 @@
         "name": "the ber-gourda triangle burger"
     },
     {
-        "name": "the mama said there'd be glaze like this burger"
+        "name": "the mama said there'd be glaze like this burger",
+        "subtext": "Comes with a Worcestershire glaze"
+    },
+    {
+        "name": "the easy come, asiago burger"
+    },
+    {
+        "name": "the random jacks of chive-ness burger",
+        "subtext": "With Monterrey Jack cheese and chives"
+    },
+    {
+        "name": "the if it's yellow let is porobello burger",
+        "subtext": "With yellow peppers and portobello mushrooms"
+    },
+    {
+        "name": "the thin red pepper burger"
+    },
+    {
+        "name": "the goat tell it on the mountain burger",
+        "subtext": "Comes with goat cheese"
+    },
+    {
+        "name": "the glazed and infused burger",
+        "subtext": "Bourbon glazed and infused with bacon"
+    },
+    {
+        "name": "the 'shroom where it happens burger"
+    },
+    {
+        "name": "the cloves encounters burger"
+    },
+    {
+        "name": "in recotta da vida burger"
+    },
+    {
+        "name": "nice guys spinach last burger"
+    },
+    {
+        "name": "this is what it sounds like when cloves fry burger",
+        "subtext": "With fried garlic cloves"
+    },
+    {
+        "name": "the happy pain patty's day burger",
+        "subtext": "Whiskey brushed patty"
+    },
+    {
+        "name": "the hollandaise ro-o-oh-o-oh-o-oh-oh-oh-oll burger",
+        "subtext": "Comes with hollandaise sauce on a Kaiser roll"
+    },
+    {
+        "name": "better cauliflower saul burger"
+    },
+    {
+        "name": "the deep blue brie burger",
+        "subtext": "Comes with blue cheese and brie"
+    },
+    {
+        "name": "the stayin' a-chive burger"
+    },
+    {
+        "name": "the almond butters band burger",
+        "subtext": "Comes with toasted almond butter"
+    },
+    {
+        "name": "avoca-don't you want me baby? burger"
+    },
+    {
+        "name": "take a picture fig'll last longer burger"
+    },
+    {
+        "name": "the into thin heirloom burger"
+    },
+    {
+        "name": "the bright leeks, big city burger",
+        "subtext": "Comes with grilled leeks"
+    },
+    {
+        "name": "the what's the matter-horn burger",
+        "subtext": "With swiss cheese crisps"
+    },
+    {
+        "name": "paint it blackberry burger"
+    },
+    {
+        "name": "play it again yam burger"
+    },
+    {
+        "name": "the night-pear on elm beet burger",
+        "subtext": "Comes with pear and beet relish"
+    },
+    {
+        "name": "the bleu collard burger"
+    },
+    {
+        "name": "the unbreakable kimchi schmidt burger"
+    },
+    {
+        "name": "the guac! or my mom will shoot burger"
+    },
+    {
+        "name": "the rye of the storm burger",
+        "subtext": "Served with a balasmic drizzle on a rye bun"
+    },
+    {
+        "name": "asiago for broke burger"
+    },
+    {
+        "name": "i'm brie-ing of a white crisp-mas sliders",
+        "subtext": "Served with brie and crispy onions"
+    },
+    {
+        "name": "the tikka look at me now burger"
+    },
+    {
+        "name": "the for butter or for wurst burger",
+        "subtext": "With butter pickles and sausage"
+    },
+    {
+        "name": "the green a little bean of me burger"
+    },
+    {
+        "name": "graters of the sauced havart(i) burger"
+    },
+    {
+        "name": "the pecorino on someone your own size burger",
+        "subtext": "Comes with pecorino crisps"
+    },
+    {
+        "name": "the three cheeks to the wind burger",
+        "subtext": "Comes with guanicale"
+    },
+    {
+        "name": "the groove is in the chard burger"
+    },
+    {
+        "name": "step up 2: the beets burger"
+    },
+    {
+        "name": "the mo, larry, and curry burger"
+    },
+    {
+        "name": "the should i sautee or should i mango burger",
+        "subtext": "Comes with sautéed onions and mango salsa"
+    },
+    {
+        "name": "do the cemini, do the thyme burger"
+    },
+    {
+        "name": "parme-jean-claude van hamburger"
+    },
+    {
+        "name": "the you can lead a horseradish to watercress burger"
+    },
+    {
+        "name": "the brewster's scallions burger"
+    },
+    {
+        "name": "take a bite out of lime burger",
+        "subtext": "With lime chutney"
+    },
+    {
+        "name": "stilton crazy after all these gruyeres burger"
+    },
+    {
+        "name": "the if i had a (pumper)nicke burger"
+    },
+    {
+        "name": "the you had me at hellokra burger"
+    },
+    {
+        "name": "grin and carrot burger"
+    },
+    {
+        "name": "the leek-y cauldron burger"
+    },
+    {
+        "name": "the marvelous mrs. basil burger"
+    },
+    {
+        "name": "son of a peach-er man burger",
+        "subtext": "Comes with peach glaze"
+    },
+    {
+        "name": "livin' on  a pear burger"
+    },
+    {
+        "name": "the full nettle jacket burger",
+        "subtext": "Comes with sautéed nettles"
+    },
+    {
+        "name": "baby got bok choy burger"
+    },
+    {
+        "name": "your cress is on my list burger",
+        "subtext": "Comes with watercress"
+    },
+    {
+        "name": "i bean of greenie burger",
+        "subtext": "Comes with black bean parsley purée"
+    },
+    {
+        "name": "a wrinkle in thyme burger"
+    },
+    {
+        "name": "it's chive o'clock some-pear burger"
+    },
+    {
+        "name": "the lost in yam-slation burger"
+    },
+    {
+        "name": "the challah and the chive-y burger"
+    },
+    {
+        "name": "you cheddar watch out, you cheddar on rye burger"
+    },
+    {
+        "name": "jingle bell peppers rock burger"
+    },
+    {
+        "name": "it came upon a midnight gruyere burger"
+    },
+    {
+        "name": "throw cardamom-ma from the train burger"
+    },
+    {
+        "name": "don't dream it's okra burger"
+    },
+    {
+        "name": "house of 1000 pork-ses burger",
+        "subtext": "Topped with ham and bacon"
+    },
+    {
+        "name": "i stilton haven't found what thyme looking for burger"
+    },
+    {
+        "name": "the rib long and prosper burger"
+    },
+    {
+        "name": "the what we dill in the shadows burger"
+    },
+    {
+        "name": "celery-brate good times, come on! burger"
+    },
+    {
+        "name": "ready or not here i plum burger"
+    },
+    {
+        "name": "the little sprouts on the prairie burger"
+    },
+    {
+        "name": "burger she goat",
+        "subtext": "Comes with goat cheese"
+    },
+    {
+        "name": "the leek-y tikki tavi burger"
+    },
+    {
+        "name": "the sage of innocence burger"
+    },
+    {
+        "name": "the mad flax curry road burger"
+    },
+    {
+        "name": "the mr. smith goes to squash-ington burger"
+    },
+    {
+        "name": "the i ain't mesclun you at all burger"
+    },
+    {
+        "name": "i like walnuts and i cannot lie burger",
+        "subtext": "Comes with walnut pesto"
+    },
+    {
+        "name": "mid-cucumber night's brie-m burger"
+    },
+    {
+        "name": "dirty rotten tendrils burger",
+        "subtext": "Comes with pea tendrils, not rotten"
+    },
+    {
+        "name": "cauliflow me maybe burger"
+    },
+    {
+        "name": "all the world's a sage burger"
+    },
+    {
+        "name": "the you burrata know burger"
+    },
+    {
+        "name": "the kids are all rye burger"
+    },
+    {
+        "name": "the take banh mi burger"
+    },
+    {
+        "name": "cal-low your bliss burger",
+        "subtext": "Served with fried cauliflower"
+    },
+    {
+        "name": "silence of the yams burger",
+        "subtext": "Served with a mild yam drizzle"
+    },
+    {
+        "name": "guac-y horror picture show burger",
+        "subtext": "Smothered in guacamole"
+    },
+    {
+        "name": "rosemary's baby corn burger",
+        "subtext": "With rosemary and baby corn"
+    },
+    {
+        "name": "i'm guacing here burger",
+        "subtext": "Comes with guacamole"
+    },
+    {
+        "name": "surely you zest burger",
+        "subtext": "Comes with lemon zest"
+    },
+    {
+        "name": "cheddar safe than chard-y burger"
+    },
+    {
+        "name": "the pineapple on 34th street burger"
+    },
+    {
+        "name": "the mould man and the sea burger",
+        "subtext": "Comes with blue cheese"
+    },
+    {
+        "name": "the that girld is hoisin burger"
+    },
+    {
+        "name": "the it's my parsley and i'll chive if i want to burger"
+    },
+    {
+        "name": "the smells like poutine spirit burger"
+    },
+    {
+        "name": "the olive and let rye burger"
+    },
+    {
+        "name": "the romancing the prune burger"
+    },
+    {
+        "name": "the edam and weep burger",
+        "subtext": "Served with edam cheese and raw onion"
+    },
+    {
+        "name": "swiss-ter act 2 burger"
+    },
+    {
+        "name": "rye here rye now burger"
+    },
+    {
+        "name": "the chive easy peas-es burger"
+    },
+    {
+        "name": "the let's get cheddar to rumble burger"
+    },
+    {
+        "name": "the brussel-mania burger"
+    },
+    {
+        "name": "the anything yuzu can do, rye can do cheddar burger"
+    },
+    {
+        "name": "the plum fry with me burger"
+    },
+    {
+        "name": "the mama told me gnocchi come burger"
+    },
+    {
+        "name": "a leage of pear own burger"
+    },
+    {
+        "name": "the burger ball pit"
+    },
+    {
+        "name": "the corn identity burger",
+        "subtext": "Comes with corn relish"
+    },
+    {
+        "name": "everything everywhere all at quince burger"
+    },
+    {
+        "name": "the electric light okra-slaw burger"
+    },
+    {
+        "name": "the good thime burger"
+    },
+    {
+        "name": "broccoli rabe-in hood burger"
+    },
+    {
+        "name": "mrs. krautfire burger"
+    },
+    {
+        "name": "swiss congeniality burger"
+    },
+    {
+        "name": "the scarlet cheddar burger",
+        "subtext": "Served with Burgandy Reduction"
     }
-
-
 ]
