@@ -1463,5 +1463,27 @@
     {
         "name": "the scarlet cheddar burger",
         "subtext": "Served with Burgandy Reduction"
+    },
+    {
+        "name": "between a broc and a chard place burger"
+    },
+    {
+        "name": "the curry up and wait burger"
+    },
+    {
+        "name": "the hole in my heart burger",
+        "subtext": "Comes with artichoke heart chutney"
+    },
+    {
+        "name": "the crying all the thyme burger"
+    },
+    {
+        "name": "live to brie another day burger"
+    },
+    {
+        "name": "the social swiss-stancing burger"
+    },
+    {
+        "name": "the frankly gruyere i don't give a yam burger"
     }
 ]
