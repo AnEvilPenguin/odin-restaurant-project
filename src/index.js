@@ -1,4 +1,5 @@
 import "./styles.css";
+import "./specials.js";
 
 (() => {
     const body = document.querySelector("body");
