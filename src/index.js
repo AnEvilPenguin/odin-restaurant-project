@@ -101,7 +101,6 @@ import { burgerOfTheDay } from "./specials.js";
 
         // TODO burger of the day
         // Chalk board
-        // Random choice from list?
     }
 
     homeBtn.addEventListener("click", clearContent);
