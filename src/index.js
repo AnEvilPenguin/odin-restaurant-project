@@ -99,6 +99,8 @@ import { burgerOfTheDay } from "./specials.js";
 
         content.appendChild(chalkboard);
 
+        console.log('Completed menu load');
+
         // TODO burger of the day
         // Chalk board
     }
