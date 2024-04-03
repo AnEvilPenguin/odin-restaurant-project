@@ -1,5 +1,6 @@
 import "./styles.css";
 import { burgerOfTheDay } from "./specials.js";
+import regularItems from "./assets/regular.json";
 
 (() => {
     const body = document.querySelector("body");
@@ -42,30 +43,27 @@ import { burgerOfTheDay } from "./specials.js";
 
         const list = document.createElement("ul");
 
-        const item = document.createElement("li");
-        item.classList.add("menuItem");
+        const generateMenuItem = (name, price) => {
+            const item = document.createElement("li");
+            item.classList.add("menuItem");
 
-        const name = document.createElement("p");
-        name.textContent = "Regular";
-        item.appendChild(name);
+            const itemName = document.createElement("p");
+            itemName.textContent = name;
+            item.appendChild(itemName);
 
-        const cost = document.createElement("p");
-        cost.textContent = "$5.00";
-        item.appendChild(cost);
+            const cost = document.createElement("p");
+            cost.textContent = price;
+            item.appendChild(cost);
 
-        list.appendChild(item);
+            list.appendChild(item);
+        };
+
+        regularItems.forEach(i => generateMenuItem(i.name, i.price));
+
         regularMenu.appendChild(list);
 
         content.appendChild(regularMenu);
 
-        // TODO regular menu
-        // Regular - $5.00
-        // Special - $5.95
-        // Cheese - Add .50
-        // Fries - $2.00
-        // Side Salad - $2.50
-        // Soft Drink - $2.00
-        // Beer - $4.00
 
         const chalkboard = document.createElement("div");
         chalkboard.classList.add("chalkboard");
@@ -98,8 +96,6 @@ import { burgerOfTheDay } from "./specials.js";
         chalkboard.appendChild(specialCost);
 
         content.appendChild(chalkboard);
-
-        console.log('Completed menu load');
 
         // TODO burger of the day
         // Chalk board
