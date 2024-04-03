@@ -1,5 +1,5 @@
 import "./styles.css";
-import "./specials.js";
+import { burgerOfTheDay } from "./specials.js";
 
 (() => {
     const body = document.querySelector("body");
@@ -81,17 +81,19 @@ import "./specials.js";
         chalkboard.appendChild(subTitle);
 
         const special = document.createElement("p");
-        special.textContent = "SHE'S A SUPER LEEK BURGER";
+        special.textContent = burgerOfTheDay.name.toUpperCase();
         special.classList.add("special");
         chalkboard.appendChild(special);
 
-        const aside = document.createElement("p");
-        aside.textContent = "(Comes with braised leeks)";
-        aside.classList.add("specialAside");
-        chalkboard.appendChild(aside);
+        if (burgerOfTheDay.subtext) {
+            const aside = document.createElement("p");
+            aside.textContent = `(${burgerOfTheDay.subtext})`;
+            aside.classList.add("specialAside");
+            chalkboard.appendChild(aside);
+        }
 
         const specialCost = document.createElement("p");
-        specialCost.textContent = "$5.95";
+        specialCost.textContent = burgerOfTheDay.price;
         specialCost.classList.add("specialCost");
         chalkboard.appendChild(specialCost);
 
