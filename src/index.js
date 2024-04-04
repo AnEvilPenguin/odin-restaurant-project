@@ -16,6 +16,8 @@ import regularItems from "./assets/regular.json";
     const clearContent = () => content.textContent = "";
 
     const generateHome = () => {
+        content.classList.add("flexColumnCenter");
+
         const heading = document.createElement("h1");
         heading.textContent = "Bob's Burgers";
 
