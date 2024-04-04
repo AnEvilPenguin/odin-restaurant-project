@@ -15,26 +15,34 @@ import regularItems from "./assets/regular.json";
 
     const clearContent = () => content.textContent = "";
 
+    const generateTextItem = (type, text, parentItem, itemClass) => {
+        const element = document.createElement(type);
+
+        element.textContent = text;
+
+        if (typeof itemClass === "string") {
+            element.classList.add(itemClass);
+        }
+
+        parentItem.appendChild(element);
+    }
+
     const generateHome = () => {
         content.classList.add("flexColumnCenter");
 
-        const heading = document.createElement("h1");
-        heading.textContent = "Bob's Burgers";
-
-        content.appendChild(heading);
+        generateTextItem("h1", "Bob's Burgers", content);
 
         // TODO yum and wow stars. h2 check out our daily specials
         // TODO cartoon burger and fries stock image
 
-        const location = document.createElement("h3");
-        location.textContent = "Conveniently located on Ocean Avenue, Seymour's Bay, New Jersey";
+        const locationText = "Conveniently located on Ocean Avenue, Seymour's Bay, New Jersey";
 
-        content.appendChild(location);
+        generateTextItem("h3", locationText, content); 
 
-        const quote = document.createElement("p");
-        quote.textContent = "Are you tired of restaurants saying, 'We have the best burgers in town'? Well, you're in luck, because I'm here to tell you that WE have the best burgers in town. Argument settled.";
+        const bobMessage = "Are you tired of restaurants saying, 'We have the best burgers in town'? Well, you're in luck, because I'm here to tell you that WE have the best burgers in town. Argument settled.";
 
-        content.appendChild(quote);
+        generateTextItem("p", bobMessage, content, "quoteMessage");
+
         // TODO quotes from flyer: https://bobs-burgers.fandom.com/wiki/Bob%27s_Burgers_(restaurant)?file=Bobs-Burgers-Wiki_Flyer_01.jpg
     }
 
@@ -49,13 +57,8 @@ import regularItems from "./assets/regular.json";
             const item = document.createElement("li");
             item.classList.add("menuItem");
 
-            const itemName = document.createElement("p");
-            itemName.textContent = name;
-            item.appendChild(itemName);
-
-            const cost = document.createElement("p");
-            cost.textContent = price;
-            item.appendChild(cost);
+            generateTextItem("p", name, item);
+            generateTextItem("p", price, item);
 
             list.appendChild(item);
         };
@@ -70,33 +73,14 @@ import regularItems from "./assets/regular.json";
         const chalkboard = document.createElement("div");
         chalkboard.classList.add("chalkboard");
 
-        const title = document.createElement("h1");
-        title.textContent = "BURGER"
-        title.classList.add("specialTitle");
-        chalkboard.appendChild(title);
-
-        const subTitle = document.createElement("h2");
-        subTitle.textContent = "OF THE DAY";
-        subTitle.classList.add("specialSubTitle");
-        chalkboard.appendChild(subTitle);
-
-        const special = document.createElement("p");
-        special.textContent = burgerOfTheDay.name.toUpperCase();
-        special.classList.add("special");
-        chalkboard.appendChild(special);
-
+        generateTextItem("h1", "BURGER", chalkboard, "specialTitle");
+        generateTextItem("h2", "OF THE DAY", chalkboard, "specialSubTitle");
+        generateTextItem("p", burgerOfTheDay.name.toUpperCase(), chalkboard, "special");
         if (burgerOfTheDay.subtext) {
-            const aside = document.createElement("p");
-            aside.textContent = `(${burgerOfTheDay.subtext})`;
-            aside.classList.add("specialAside");
-            chalkboard.appendChild(aside);
+            generateTextItem("p", `(${burgerOfTheDay.subtext})`, chalkboard, "specialAside");
         }
-
-        const specialCost = document.createElement("p");
-        specialCost.textContent = burgerOfTheDay.price;
-        specialCost.classList.add("specialCost");
-        chalkboard.appendChild(specialCost);
-
+        generateTextItem("p", burgerOfTheDay.price, chalkboard, "specialCost");
+        
         content.appendChild(chalkboard);
 
         // TODO burger of the day

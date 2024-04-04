@@ -71,6 +71,10 @@ h1 {
     margin-right: auto;
 }
 
+.quoteMessage {
+    width: 60ch;
+}
+
 .regularMenu {
     padding: 2em;
     margin: 2em;
