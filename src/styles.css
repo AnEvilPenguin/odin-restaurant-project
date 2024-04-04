@@ -75,15 +75,19 @@ h1 {
     width: min(60ch, 80vw);
 }
 
-.regularMenu {
+.regularMenu,
+.chalkboard {
     padding: 2em;
     margin: 2em;
 
+    min-width: clamp(150px, 50%, 1000px);
+}
+
+.regularMenu {
     border: 10px solid #7a85a1;
 
     background-color: #ecebe7;
-
-    min-width: clamp(150px, 50%, 1000px);
+    box-shadow: 6px 6px 8px 5px rgba(0, 0, 0, 0.5);
 }
 
 ul {
@@ -107,5 +111,14 @@ ul {
     margin-top: clamp(0px, 1vh, 20px);
     margin-bottom: clamp(0px, 1vh, 20px);
 }
-/* TODO Chalkboard for menu */
-;
+
+.chalkboard {
+    border: 10px solid #ad5953;
+    box-shadow: 6px 6px 8px 5px rgba(0, 0, 0, 0.5);
+
+    background-color: #2b2b2b;
+
+    color: white;
+}
+
+/* Chalkboard center, chalk font, better spacing */
