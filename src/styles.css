@@ -61,7 +61,29 @@ h1 {
     font-weight: bolder;
 }
 
+.regularMenu {
+    padding: 2em;
+    margin: 2em;
 
+    border: 10px solid #7a85a1;
 
+    background-color: #ecebe7;
+}
+
+ul {
+    list-style: none; 
+    padding: 0px;
+    margin: 0px;
+}
+
+.menuItem {
+    display: flex;
+    justify-content: space-between;
+
+    color: #234482;
+    font-family: cabin, sans-serif;
+    font-weight: bolder;
+    font-size: 1.25rem;
+}
 /* TODO Chalkboard for menu */
 ;
