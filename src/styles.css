@@ -21,7 +21,7 @@
 }
 
 header {
-    padding: 0px 25vw;
+    padding: 0px clamp(50px, 16vw, 50%);
     margin: 0px;
 }
 
@@ -41,7 +41,7 @@ button {
     background-color: var(--background-yellow);
 
     font-family: "Burgers1";
-    font-size: 4rem;
+    font-size: min(10vw, 4rem);
 
     cursor: pointer;
 }
@@ -72,7 +72,7 @@ h1 {
 }
 
 .quoteMessage, .quote {
-    width: 60ch;
+    width: min(60ch, 80vw);
 }
 
 .regularMenu {
@@ -101,6 +101,11 @@ ul {
     font-family: cabin, sans-serif;
     font-weight: bolder;
     font-size: 1.25rem;
+}
+
+.menuItem p {
+    margin-top: clamp(0px, 1vh, 20px);
+    margin-bottom: clamp(0px, 1vh, 20px);
 }
 /* TODO Chalkboard for menu */
 ;
