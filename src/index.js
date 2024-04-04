@@ -15,7 +15,7 @@ import regularItems from "./assets/regular.json";
 
     const clearContent = () => content.textContent = "";
 
-    const mainMenu = () => {
+    const generateHome = () => {
         const heading = document.createElement("h1");
         heading.textContent = "Bob's Burgers";
 
@@ -36,7 +36,7 @@ import regularItems from "./assets/regular.json";
         // TODO quotes from flyer: https://bobs-burgers.fandom.com/wiki/Bob%27s_Burgers_(restaurant)?file=Bobs-Burgers-Wiki_Flyer_01.jpg
     }
 
-    const menu = () => {
+    const generateMenu = () => {
 
         const regularMenu = document.createElement("div");
         regularMenu.classList.add("regularMenu");
@@ -102,14 +102,14 @@ import regularItems from "./assets/regular.json";
     }
 
     homeBtn.addEventListener("click", clearContent);
-    homeBtn.addEventListener("click", mainMenu);
+    homeBtn.addEventListener("click", generateHome);
 
     menuBtn.addEventListener("click", clearContent);
-    menuBtn.addEventListener("click", menu);
+    menuBtn.addEventListener("click", generateMenu);
 
     aboutBtn.addEventListener("click", clearContent);
 
-    mainMenu();
+    generateHome();
     // TODO Attach Functions to each button
     // TODO Clear any existing content
     // TODO content files
