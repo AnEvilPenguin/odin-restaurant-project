@@ -1,6 +1,6 @@
 import "./styles.css";
 import { burgerOfTheDay } from "./specials.js";
-import regularItems from "./assets/regular.json";
+import { bobMessage, location, quotes, regularMenuItems, title } from "./constants.js";
 
 (() => {
     const body = document.querySelector("body");
@@ -22,6 +22,8 @@ import regularItems from "./assets/regular.json";
 
         if (typeof itemClass === "string") {
             element.classList.add(itemClass);
+        } else if (Array.isArray(itemClass)) {
+            itemClass.forEach(c => element.classList.add(c));
         }
 
         parentItem.appendChild(element);
@@ -30,18 +32,28 @@ import regularItems from "./assets/regular.json";
     const generateHome = () => {
         content.classList.add("flexColumnCenter");
 
-        generateTextItem("h1", "Bob's Burgers", content);
+        generateTextItem("h1", title, content);
 
         // TODO yum and wow stars. h2 check out our daily specials
         // TODO cartoon burger and fries stock image
 
-        const locationText = "Conveniently located on Ocean Avenue, Seymour's Bay, New Jersey";
-
-        generateTextItem("h3", locationText, content); 
-
-        const bobMessage = "Are you tired of restaurants saying, 'We have the best burgers in town'? Well, you're in luck, because I'm here to tell you that WE have the best burgers in town. Argument settled.";
+        generateTextItem("h3", location, content); 
 
         generateTextItem("p", bobMessage, content, "quoteMessage");
+
+        const quotesList = document.createElement("ul");
+        quotesList.classList.add("quotes");
+
+        quotes.forEach(({attribution, relation, quote}) => {
+            const quoteItem = document.createElement("li");
+
+            generateTextItem("p", quote, quoteItem, "quote");
+            generateTextItem("p", `-${attribution}, ${relation}`, quoteItem, "quoteAttribution");
+            
+            quotesList.appendChild(quoteItem);
+        });
+
+        content.appendChild(quotesList);
 
         // TODO quotes from flyer: https://bobs-burgers.fandom.com/wiki/Bob%27s_Burgers_(restaurant)?file=Bobs-Burgers-Wiki_Flyer_01.jpg
     }
@@ -63,7 +75,7 @@ import regularItems from "./assets/regular.json";
             list.appendChild(item);
         };
 
-        regularItems.forEach(i => generateMenuItem(i.name, i.price));
+        regularMenuItems.forEach(i => generateMenuItem(i.name, i.price));
 
         regularMenu.appendChild(list);
 

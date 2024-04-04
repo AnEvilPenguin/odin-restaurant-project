@@ -71,7 +71,7 @@ h1 {
     margin-right: auto;
 }
 
-.quoteMessage {
+.quoteMessage, .quote {
     width: 60ch;
 }
 
